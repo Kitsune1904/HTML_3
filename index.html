@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="chess">
+      <div class="chess__row">
+        <div class="chess__item"></div>
+        <div class="chess__item mirror">A</div>
+        <div class="chess__item mirror">B</div>
+        <div class="chess__item mirror">C</div>
+        <div class="chess__item mirror">D</div>
+        <div class="chess__item mirror">E</div>
+        <div class="chess__item mirror">F</div>
+        <div class="chess__item mirror">G</div>
+        <div class="chess__item mirror">H</div>
+        <div class="chess__item"></div>
+      </div>
+      <div class="chess__row">
+        <div class="chess__item">8</div>
+        <div class="chess__item">
+          <img 
+            src="./images/rook_white.png" 
+            alt="rook white" 
+            class="white" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/knight_white.png" 
+            alt="knight white" 
+            class="white" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+          src="./images/bishop_white.png" 
+          alt="bishop white" 
+          class="white" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/queen_white.png" 
+            alt="queen white" 
+            class="white" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/king_white.png" 
+            alt="king white" 
+            class="white" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+          src="./images/bishop_white.png" 
+          alt="bishop white" 
+          class="white" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+          src="./images/knight_white.png" 
+          alt="knight white" 
+          class="white" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/rook_white.png" 
+            alt="rook white" 
+            class="white" 
+          />
+        </div>
+        <div class="chess__item mirror">8</div>
+      </div>
+      <div class="chess__row">
+        <div class="chess__item">7</div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_white.png" 
+            alt="pawn white" 
+            class="white" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_white.png" 
+            alt="pawn white" 
+            class="white" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_white.png" 
+            alt="pawn white" 
+            class="white" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_white.png" 
+            alt="pawn white" 
+            class="white" 
+            />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_white.png" 
+            alt="pawn white" 
+            class="white" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_white.png" 
+            alt="pawn white" 
+            class="white" 
+            />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_white.png" 
+            alt="pawn white" 
+            class="white" 
+            />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_white.png" 
+            alt="pawn white" 
+            class="white" 
+          />
+        </div>
+        <div class="chess__item mirror">7</div>
+      </div>
+      <div class="chess__row">
+        <div class="chess__item">6</div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item mirror">6</div>
+      </div>
+      <div class="chess__row">
+        <div class="chess__item">5</div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item mirror">5</div>
+      </div>
+      <div class="chess__row">
+        <div class="chess__item">4</div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item mirror">4</div>
+      </div>
+      <div class="chess__row">
+        <div class="chess__item">3</div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item"></div>
+        <div class="chess__item mirror">3</div>
+      </div>
+      <div class="chess__row">
+        <div class="chess__item">2</div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_black.png" 
+            alt="pawn black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_black.png" 
+            alt="pawn black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_black.png" 
+            alt="pawn black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_black.png" 
+            alt="pawn black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_black.png" 
+            alt="pawn black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_black.png" 
+            alt="pawn black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_black.png" 
+            alt="pawn black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/pawn_black.png" 
+            alt="pawn black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item mirror">2</div>
+      </div>
+      <div class="chess__row">
+        <div class="chess__item">1</div>
+        <div class="chess__item">
+          <img 
+            src="./images/rook_black.png" 
+            alt="rook black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/knight_black.png" 
+            alt="knight black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/bishop_black.png" 
+            alt="bishop black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/queen_black.png" 
+            alt="queen black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/king_black.png" 
+            alt="king black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/bishop_black.png" 
+            alt="bishop black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/knight_black.png" 
+            alt="knight black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item">
+          <img 
+            src="./images/rook_black.png" 
+            alt="rook black" 
+            class="black" 
+          />
+        </div>
+        <div class="chess__item mirror">1</div>
+      </div>
+      <div class="chess__row">
+        <div class="chess__item"></div>
+        <div class="chess__item">A</div>
+        <div class="chess__item">B</div>
+        <div class="chess__item">C</div>
+        <div class="chess__item">D</div>
+        <div class="chess__item">E</div>
+        <div class="chess__item">F</div>
+        <div class="chess__item">G</div>
+        <div class="chess__item">H</div>
+        <div class="chess__item"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

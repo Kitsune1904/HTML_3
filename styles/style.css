@@ -1,0 +1,92 @@
+/* 0 */
+* {
+  box-sizing: border-box; /* дает вам возможность сделать блок стационарного размера, при этом в размеры этого блока входят сам контент, падинг и рамка  */
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+}
+
+/* 10 */ /* что-бы при уменьшении ширины окна браузера не было смещения шахматной доски */
+.wrapper {
+  min-width: 880px;
+}
+
+/* 10 */ /* тут он в приницпе не нужен, если использовать точные параменты для контейнера, что содержит все элементы*/
+.chess__row {
+  clear: both;
+}
+
+/* 10 */
+.chess__item {
+  width: 100px;
+  height: 100px;
+  float: left;
+  border: 1px solid black;
+  text-align: center;
+}
+
+/* 1 */
+img {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+}
+
+/* 11 */
+.chess__item > img.white {
+  filter: drop-shadow(0 0 5px #000000);
+}
+
+/* 11 */
+.chess__item > img.black {
+  filter: drop-shadow(0 0 5px hsla(0, 0%, 100%, 0.664));
+}
+
+/* 41 */
+.chess > .chess__row > div.chess__item:first-child,
+/* 41 */
+.chess > .chess__row > div.chess__item:last-child,
+/* 41 */
+.chess > .chess__row:first-child > div.chess__item,
+/* 41 */
+.chess > .chess__row:last-child > div.chess__item {
+  background-color: rgb(102, 43, 0);
+  border: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/* 41 */
+.chess > .chess__row > div.chess__item:first-child,
+.chess > .chess__row > div.chess__item:last-child {
+  width: 40px;
+  line-height: 100px;
+}
+
+/* 41 */
+.chess > .chess__row:first-child > div.chess__item,
+.chess > .chess__row:last-child > div.chess__item {
+  height: 40px;
+  line-height: 40px;
+}
+
+/* 40 */
+.chess__row:nth-child(odd) > .chess__item:nth-child(odd),
+.chess__row:nth-child(even) > .chess__item:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.855);
+}
+
+/* .mirror {
+  transform: rotate(
+    180deg
+  ); /*  Щоб символи були орієнтовані як на справжній дошці  
+} */
+
+/* 
+another variant
+.chess__row:nth-child(2n) .chess__item:nth-child(2n),
+.chess__row:nth-child(2n-1) .chess__item:nth-child(2n-1) {
+  background-color: black;
+}
+*/

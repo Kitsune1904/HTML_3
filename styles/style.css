@@ -11,8 +11,10 @@
   min-width: 880px;
 }
 
-/* 10 */ /* тут он в приницпе не нужен, если использовать точные параменты для контейнера, что содержит все элементы*/
-.chess__row {
+/* 11 */
+.chess__row::after {
+  content: '';
+  display: table;
   clear: both;
 }
 
@@ -29,7 +31,7 @@
 /* 1 */
 img {
   width: 80px;
-  height: 80px;
+  height: 80px; 
   vertical-align: middle;
 }
 
